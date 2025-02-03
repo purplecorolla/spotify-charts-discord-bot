@@ -1,0 +1,7 @@
+{
+  "headers": {
+    "x-signature-ed25519": "abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef",
+    "x-signature-timestamp": "1736213342"
+  },
+  "body": "{\"type\":1,\"id\":\"1123456789012345678\",\"token\":\"aW50ZXJhY3Rpb246MTIzNDU2Nzg5\",\"application_id\":\"123456789012345678\",\"user\":{\"id\":\"123456789012345678\",\"username\":\"TestUser\",\"discriminator\":\"1234\",\"avatar\":\"abcdef\"}}"
+}
