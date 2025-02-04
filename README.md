@@ -84,9 +84,9 @@ A infraestrutura do bot é composta pelos seguintes serviços:
 4️⃣ O usuário autoriza o aplicativo, e o Spotify redireciona para a **API Gateway** com um código de autorização.    
 5️⃣ A API Gateway chama a **Lambda**, que troca o código pelo token de acesso e refresh token.    
 6️⃣ O token é salvo no **S3 Bucket** para reutilização futura.    
-7️⃣ A Lambda responde ao usuário no Discord, agora com os dados do Spotify.   
----
+7️⃣ A Lambda responde ao usuário no Discord, agora com os dados do Spotify. 
 
+---
 ## Observações Importantes ⚠️
 - O arquivo **token.json** é criado automaticamente no bucket S3 quando um usuário autentica pela primeira vez. Se ele não existir, será gerado.
 - A **API do Spotify** retorna apenas as últimas 50 músicas que o usuário ouviu. Não é possível acessar históricos mais antigos.
