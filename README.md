@@ -54,7 +54,7 @@ A infraestrutura do bot é composta pelos seguintes serviços:
   
 ![Fluxo do Bot](docs/discord-spotify-bot-gif.gif)  
   
-### **Fluxo de funcionamento do bot**  
+
 1️⃣ **Usuário interage com o bot no Discord**    
 - O usuário envia um comando (`/charts`, `/instrucoes`, `/ajuda`) no canal do Discord.    
   
@@ -75,6 +75,7 @@ A infraestrutura do bot é composta pelos seguintes serviços:
 6️⃣ **Bot responde ao usuário no Discord**    
 - Se o usuário já estava autenticado, o bot responde com os dados do Spotify.    
  - Se o usuário **precisava autenticar**, o bot envia um link para login no Spotify.  
+
 ---
 ### **Fluxo de Autenticação no Spotify**  
 1️⃣ O usuário envia um comando `/charts` pela primeira vez.    
@@ -85,6 +86,7 @@ A infraestrutura do bot é composta pelos seguintes serviços:
 6️⃣ O token é salvo no **S3 Bucket** para reutilização futura.    
 7️⃣ A Lambda responde ao usuário no Discord, agora com os dados do Spotify.   
 ---
+
 ## Observações Importantes ⚠️
 - O arquivo **token.json** é criado automaticamente no bucket S3 quando um usuário autentica pela primeira vez. Se ele não existir, será gerado.
 - A **API do Spotify** retorna apenas as últimas 50 músicas que o usuário ouviu. Não é possível acessar históricos mais antigos.
